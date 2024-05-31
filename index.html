@@ -6,38 +6,65 @@
   <title>Document</title>
   
   <style>
-    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+    }
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1280px;
+      margin: auto;
+      background-color: orange;
+    }
+    .inner > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .principal-nav > ul > li {
+      display: inline-block;
+    }
   </style>
 </head>
 <body>
+  <!-- Outer -->
   <header>
     <!-- Inner -->
-    <div>
-      <!-- Logo -->
-      <div id="logo">
-        <a href="/"><img src="/assets/images/site-logo.png" alt="Hotel Booking"></a>
+    <div class="inner">
+      <div>
+        <!-- Logo -->
+        <div id="logo">
+          <a href="/"><img src="/assets/images/site-logo.png" alt="Hotel Booking"></a>
+        </div>
+        <!-- Navegación de usuario -->
+        <nav class="user-nav">
+          <ul>
+            <li><a href="/ingreso">Entrar</a></li>
+            <li><a href="/registro">Registrarme</a></li>
+          </ul>
+        </nav>
       </div>
-      <!-- Navegación de usuario -->
-      <nav class="user-nav">
-        <ul>
-          <li><a href="/ingreso">Entrar</a></li>
-          <li><a href="/registro">Registrarme</a></li>
-        </ul>
-      </nav>
-      <!-- Navegación principal -->
-      <nav class="principal-nav">
-        <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/alojamiento">Alojamiento</a></li>
-          <li><a href="/galeria">Galería</a></li>
-          <li><a href="/comodidades">Comodidades</a></li>
-          <li><a href="/noticias">Noticias</a></li>
-          <li><a href="/contacto">Contacto</a></li>
-        </ul>
-      </nav>
-      <!-- Contacto telefónico -->
-      <div class="contact-phone">
-        <a href="https://whatsapp">1234 567890</a>
+      <div>
+        <!-- Navegación principal -->
+        <nav class="principal-nav">
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/alojamiento">Alojamiento</a></li>
+            <li><a href="/galeria">Galería</a></li>
+            <li><a href="/comodidades">Comodidades</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- Contacto telefónico -->
+        <div class="contact-phone">
+          <a href="https://whatsapp">1234 567890</a>
+        </div>
       </div>
     </div>
   </header>
@@ -45,7 +72,7 @@
     <!-- Hero -->
     <section>
       <!-- Formulario de búsqueda -->
-      <div>
+      <div class="inner">
         <h1>Reserva tu habitación</h1>
         <!-- Formulario de búsqueda -->
         <form action="/">
@@ -71,13 +98,13 @@
       </div>
       <!-- Carousel -->
       <div>
-        <div>
+        <div class="inner">
           <img src="/carousel-1.png" alt="Imagen promocional 1">
           <h2>Promoción 1</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quas nulla iste obcaecati. Sunt qui, accusamus aut, eum illo labore sint rem numquam nihil ut quisquam! Quibusdam, placeat tempore. Dignissimos!</p>
           <a href="#mas-info">Más información</a>
         </div>
-        <div>
+        <div class="inner">
           <img src="/carousel-1.png" alt="Imagen promocional 1">
           <h2>Promoción 1</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quas nulla iste obcaecati. Sunt qui, accusamus aut,
@@ -88,7 +115,6 @@
     </section>
   </main>
   <footer>
-
   </footer>
 </body>
 </html>
