@@ -20,20 +20,31 @@
     }
     main > section {
       height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      /* align-items: end; */
+    }
+    main > section > * {
+      flex: 1;
+      /* flex-grow: 1; */
     }
     aside {
-      float: right;
-      height: 100%;
-      width: calc(100vw / 3);
+      /* float: right; */
+      /* height: 100%; */
+      /* width: calc(100vw / 3); */
       min-width: 600px;
       background: red;
+      flex-grow: 1;
     }
     .main-container {
-      float: left;
-      height: 100%;
-      width: calc(100vw / 3 * 2);
+      /* float: left; */
+      /* height: 100%; */
+      /* width: calc(100vw / 3 * 2); */
       min-width: 600px;
       background: blue;
+      flex-grow: 3;
     }
     footer  {
       height: 100px;
