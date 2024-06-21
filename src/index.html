@@ -4,56 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  
-  <style>
-    /* NormalizeCSS */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    header {
-      
-    }
-    .inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1280px;
-      margin: auto;
-      background-color: orange;
-    }
-    .inner > div {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .principal-nav > ul > li {
-      display: inline-block;
-    }
-  </style>
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
   <!-- Outer -->
   <header>
     <!-- Inner -->
     <div class="inner">
-      <div>
+      <div class="flex">
         <!-- Logo -->
         <div id="logo">
           <a href="/"><img src="/assets/images/site-logo.png" alt="Hotel Booking"></a>
         </div>
         <!-- Navegación de usuario -->
-        <nav class="user-nav">
+        <nav class="nav user-nav">
           <ul>
             <li><a href="/ingreso">Entrar</a></li>
             <li><a href="/registro">Registrarme</a></li>
           </ul>
         </nav>
       </div>
-      <div>
+
+      <div class="flex">
         <!-- Navegación principal -->
-        <nav class="principal-nav">
+        <nav class="nav primary-nav">
           <ul>
             <li><a href="/">Inicio</a></li>
             <li><a href="/alojamiento">Alojamiento</a></li>
@@ -99,7 +74,7 @@
         </form>
       </div>
       <!-- Carousel -->
-      <div>
+      <!-- <div>
         <div class="inner">
           <img src="/carousel-1.png" alt="Imagen promocional 1">
           <h2>Promoción 1</h2>
@@ -113,7 +88,7 @@
             eum illo labore sint rem numquam nihil ut quisquam! Quibusdam, placeat tempore. Dignissimos!</p>
           <a href="#mas-info">Más información</a>
         </div>
-      </div>
+      </div> -->
     </section>
   </main>
   <footer>

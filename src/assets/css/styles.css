@@ -1,0 +1,83 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.1em;
+}
+a {
+  text-decoration: none;
+  color: #16b4ef;
+}
+ul {
+  list-style: none;
+}
+.flex {
+  display: flex;
+  gap: 1em;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: auto;
+  padding: 1em;
+}
+
+
+/* Header */
+header {
+  overflow-x: hidden;
+}
+
+header .inner > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation */
+.nav a {
+  color: #5c5c5c
+}
+.user-nav {
+  font-size: .8em;
+}
+.user-nav ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  gap: .6em;
+  border-left: 1px solid #ccc;
+}
+
+/* Primary navigation */
+.primary-nav > ul {
+  display: flex;
+  gap: .6em;
+}
+
+/*  */
+.contact-phone {
+  position: relative;
+  padding: 1em;
+  background: #3ac4fa;
+}
+.contact-phone::before {
+  content: "F";
+  color: #fff;
+}
+.contact-phone::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 100vw;
+  background: #3ac4fa;
+}
+.contact-phone a {
+  color: #fff;
+}
