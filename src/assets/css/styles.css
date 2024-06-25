@@ -17,19 +17,35 @@ ul {
   display: flex;
   gap: 1em;
 }
+
 .inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 1280px;
   margin: auto;
   padding: 1em;
 }
 
+.left-separator {
+  border-left: 1px solid #ccc;
+}
+
+.btn {
+  padding: 1em 1.5em;
+}
+
+.btn-primary {
+  background: #f7c411;
+  text-transform: uppercase;
+}
 
 /* Header */
 header {
   overflow-x: hidden;
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .inner > div {
@@ -50,7 +66,6 @@ header .inner > div {
   flex-direction: column;
   padding-left: 1em;
   gap: .6em;
-  border-left: 1px solid #ccc;
 }
 
 /* Primary navigation */
@@ -80,4 +95,31 @@ header .inner > div {
 }
 .contact-phone a {
   color: #fff;
+}
+
+/* Searchbox */
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #313a45;
+  padding: 1.5em;
+  gap: 1.5em;
+}
+.search-box > * {
+  flex: 1;
+}
+
+.search-box h1 {
+  color: #fff;
+  flex-grow: 1;
+  text-transform: uppercase;
+}
+.search-box h1::first-line {
+  font-size: .7em;
+}
+
+.search-box form {
+  flex-grow: 6;
+  padding: .5em 1em;
 }
