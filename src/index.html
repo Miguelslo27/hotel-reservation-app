@@ -19,7 +19,7 @@
         </div>
         <!-- Navegación de usuario -->
         <nav class="nav user-nav">
-          <ul>
+          <ul class="left-separator">
             <li><a href="/ingreso">Entrar</a></li>
             <li><a href="/registro">Registrarme</a></li>
           </ul>
@@ -50,28 +50,30 @@
     <section>
       <!-- Formulario de búsqueda -->
       <div class="inner">
-        <h1>Reserva tu habitación</h1>
-        <!-- Formulario de búsqueda -->
-        <form action="/">
-          <input type="date"> <!-- text | email | url | address | phone | date | number -->
-          <input type="date"> <!-- text | email | url | address | phone | date | number -->
-          <select>
-            <option value="1">1 Habitación</option>
-            <option value="2">2 Habitación</option>
-            <option value="3">3 Habitación</option>
-          </select>
-          <select>
-            <option value="1">1 Adulto</option>
-            <option value="2">2 Adultos</option>
-            <option value="3">3 Adultos</option>
-          </select>
-          <select>
-            <option value="0">0 Niños</option>
-            <option value="1">1 Niño</option>
-            <option value="2">2 Niños</option>
-          </select>
-          <button type="submit">Buscar</button>
-        </form>
+        <div class="search-box">
+          <h1>Reserva tu habitación</h1>
+          <!-- Formulario de búsqueda -->
+          <form action="/" class="left-separator">
+            <input type="date"> <!-- text | email | url | address | phone | date | number -->
+            <input type="date"> <!-- text | email | url | address | phone | date | number -->
+            <select>
+              <option value="1">1 Habitación</option>
+              <option value="2">2 Habitación</option>
+              <option value="3">3 Habitación</option>
+            </select>
+            <select>
+              <option value="1">1 Adulto</option>
+              <option value="2">2 Adultos</option>
+              <option value="3">3 Adultos</option>
+            </select>
+            <select>
+              <option value="0">0 Niños</option>
+              <option value="1">1 Niño</option>
+              <option value="2">2 Niños</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+          </form>
+        </div>
       </div>
       <!-- Carousel -->
       <!-- <div>
