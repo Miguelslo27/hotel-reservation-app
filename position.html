@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posicionamiento</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+      padding: 20px;
+      border: 10px solid blue;
+      box-sizing: border-box;
+    }
+    .position {
+      background: green;
+      /* position: static; */
+      position: relative;
+      top: 100px;
+      left: 100px;
+      /* bottom: 
+      left: 
+      right:  */
+    }
+    .position-left {
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: yellow;
+      /* position: ; */
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="position"></div> -->
+  <div class="box">
+
+  </div>
+
+  <div class="box position">
+    <div class="position-left"></div>    
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout con tablas</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+    header {
+      height: 100px;
+      background: green;
+    }
+    main {
+      height: calc(100vh - 100px - 100px);
+      background: orange;
+    }
+    main > section {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      /* align-items: end; */
+    }
+    main > section > * {
+      flex: 1;
+      /* flex-grow: 1; */
+    }
+    aside {
+      /* float: right; */
+      /* height: 100%; */
+      /* width: calc(100vw / 3); */
+      min-width: 600px;
+      background: red;
+      flex-grow: 1;
+    }
+    .main-container {
+      /* float: left; */
+      /* height: 100%; */
+      /* width: calc(100vw / 3 * 2); */
+      min-width: 600px;
+      background: blue;
+      flex-grow: 3;
+    }
+    footer  {
+      height: 100px;
+      background: yellow;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Header
+  </header>
+  <main>
+    <section>
+      <aside class="column">
+        Column
+      </aside>
+      <div class="main-container">
+        Main content
+      </div>
+    </section>
+  </main>
+  <footer>
+    Footer
+  </footer>
+</body>
+</html>
