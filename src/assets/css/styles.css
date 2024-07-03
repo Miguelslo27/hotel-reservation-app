@@ -187,7 +187,8 @@ header .inner > div {
 
 .carousel-info .special-offer {
   position: absolute;
-  top: 5em;
+  top: 50%;
+  transform: translateY(-50%);
   right: 3em;
   display: flex;
   flex-direction: column;
@@ -199,6 +200,15 @@ header .inner > div {
   height: 150px;
   border-radius: 50%;
   box-shadow: 0 20px 30px rgba(0, 0, 0, .4);
+}
+
+.carousel-info .special-offer::before {
+  content: "";
+  position: absolute;
+  top: -98%;
+  height: 100%;
+  width: 1px;
+  background: #000;
 }
 
 .carousel-info .special-offer h3 {
